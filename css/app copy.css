@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol,li,menu{
+    list-style: none;
+}
+
+/* TAG ZONE */
+.mode-tag{
+    padding-bottom: 20px;
+}
+
+.tag-row{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    gap: 10px;    
+}
+
+.tag-col{
+    background-color: gray;
+    padding: 5px;
+    border-radius: 10px;
+    line-height: 10px;
+}
+
+/* CAM ZONE */
+
+.cam-zone{
+    /* padding-top: 20px; */
+    height: calc(100vh - 60px);
+    background-color: black;
+}
+
+.cam-row{
+    max-width: 1700px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+
+}
+
+.cam-col{
+    display: flex;
+    flex-basis: calc(100%/7);
+    
+}
+
+.cam-container{
+    position: relative;
+}
+
+.cam-container img{
+    width: 100%;
+}
+
+.cam-container .cam-id{
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    background-color: rgb(155 155 155 / 80%);
+    color: white;
+}
+
+/* TOOLBAR ZONE */
+
+.footer{
+    background-color: #222222;
+	display: flex;
+	justify-content: space-between;
+    color: white;
+}
+
+
+
+.toolbar {
+	display: flex;
+}
+
+.toolbar__item {
+	padding: 14px;
+	flex-shrink: 0;
+}
+
+.toolbar__item.button {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	text-align: center;
+	
+}
+
+.toolbar__item.button:hover {
+	color: greenyellow;
+}
+
+.toolbar__item.button .button__text {
+	display: block;
+}
+
+.toolbar__item.button .button__icon {
+	font-size: 30px;
+	margin-bottom: 12px;
+}
+
+.end-meeting-btn {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: red;
+	padding: 0 20px;
+	font-weight: 700;
+}
